@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Megatron.DataModels.Model.Fagor
+namespace Megatron.DataModels.Model.Fragor
 {
     [Table("ValAlternativ")]
     public class ValAlternativ

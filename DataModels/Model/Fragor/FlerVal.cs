@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Megatron.DataModels.Model.Fagor
+namespace Megatron.DataModels.Model.Fragor
 {
     [Table("Flerval")]
     public class Flerval : Fraga

@@ -13,7 +13,7 @@ namespace Megatron.DataModels.Model.Fragor
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        public Fraga Fraga { get; set; }
+        //public Fraga Fragan { get; set; }
 
         public string Varde { get; set; }
     }
