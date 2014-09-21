@@ -17,10 +17,12 @@ namespace Megatron.DataModels.Model
 
         private ICollection<Medlem> _medlemmar;
 
-        public virtual ICollection<Medlem> StudyTokens
+        public virtual ICollection<Medlem> Medlemmar
         {
             get { return _medlemmar ?? (_medlemmar = new System.Collections.ObjectModel.Collection<Medlem>()); }
             set { _medlemmar = value; }
         }
+
+        // Betalningsinformation
     }
 }

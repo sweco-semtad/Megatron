@@ -10,18 +10,34 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Föreningar</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Här är listan på de föreningar du är medlem i.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>
+            <ul>
+                <li>Förening A</li>
+                <li>Förening B</li>
+                <li>Förening C</li>
+            </ul>
+        </p>
+        <p>
+            @Html.ActionLink(HttpUtility.HtmlDecode("Skapa förening &raquo;"), "Forening", "Create", routeValues: null, htmlAttributes: new { title = "Skapa förening", @class = "btn btn-default" })
+        @*<a class="btn btn-default" href="~/Forening/Create">Skapa förening &raquo;</a>*@</p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Meddelanden</h2>
+        <p>Här kanske man kan samla de senaste händelserna för dina föreningar.</p>
+        <ul>
+            <li>Betalning</li>
+            <li>Ny medlem</li>
+            <li>Betalning</li>
+            <li>Ny medlem</li>
+            <li>Betalning</li>
+            <li>Ny medlem</li>
+            <li>Betalning</li>
+        </ul>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Se hela listan &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>

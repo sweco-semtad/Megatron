@@ -17,6 +17,8 @@ namespace Megatron.DataModels.Model
 
         public decimal Grundpris { get; set; }
 
+        public Tidsspann Oppettider { get; set; }
+
         private ICollection<Fragor.Fraga> _fragor;
         public virtual ICollection<Fragor.Fraga> Fragor
         {
@@ -30,5 +32,7 @@ namespace Megatron.DataModels.Model
             get { return _formularsvar ?? (_formularsvar = new System.Collections.ObjectModel.Collection<Fragor.Svar>()); }
             set { _formularsvar = value; }
         }
+
+        // Betalning
     }
 }

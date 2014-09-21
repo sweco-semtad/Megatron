@@ -26,5 +26,11 @@ namespace Megatron.DataModels.Model
             get { return _formular ?? (_formular = new System.Collections.ObjectModel.Collection<Formular>()); }
             set { _formular = value; }
         }
+
+        // Kanpanjer? Mailutskick mm
+
+        // Startlista
+
+        // Resultat
     }
 }

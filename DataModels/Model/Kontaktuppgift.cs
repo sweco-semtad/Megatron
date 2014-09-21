@@ -13,7 +13,7 @@ namespace Megatron.DataModels.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        public string Namn { get; set; }
+        public string Typ { get; set; }
         public string Värde { get; set; }
     }
 }
