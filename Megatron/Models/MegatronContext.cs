@@ -20,6 +20,10 @@ namespace Megatron.Models
         }
 
         public System.Data.Entity.DbSet<Megatron.DataModels.Model.Forening> Forenings { get; set; }
+
+        public System.Data.Entity.DbSet<Megatron.DataModels.Model.Event> Events { get; set; }
+
+        public System.Data.Entity.DbSet<Megatron.DataModels.Model.Formular> Formulars { get; set; }
     
     }
 }

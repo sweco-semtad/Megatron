@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataModels.Repo
+namespace Megatron.DataModels.Model.Repo
 {
     public interface IRepository : IDisposable
     {

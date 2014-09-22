@@ -15,8 +15,14 @@ namespace Megatron.DataModels.Model
 
         public string Namn { get; set; }
 
-        private ICollection<Medlem> _medlemmar;
+        private ICollection<Event> _event;
+        public virtual ICollection<Event> Event
+        {
+            get { return _event ?? (_event = new System.Collections.ObjectModel.Collection<Event>()); }
+            set { _event = value; }
+        }
 
+        private ICollection<Medlem> _medlemmar;
         public virtual ICollection<Medlem> Medlemmar
         {
             get { return _medlemmar ?? (_medlemmar = new System.Collections.ObjectModel.Collection<Medlem>()); }
